@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+</head>
+<body>
+    <h2>Event Delegation</h2>
+    <!--Insted of attaching a click eventListener to each <li> individually, 
+        we attach the eventListener to the parent-element <ul>. When a click 
+        event occurs on any <li>, the event bubbles up to the <ul> and can
+        check the event.target property to determine which <li> was clicked. 
+            
+        By using event delegation, we can simplyfy eventHandling, especially in cases
+        where we have a large number of dynamically created or changing elements. It 
+        will improve the performance since we have fewer eventListeners attached to the DOM
+    -->
+        <h3>Event Delegation Example</h3>
+        
+        <ul id="parentList">
+            <li>Item one</li>
+            <li>Item two</li>
+            <li>Item three</li>
+            <li>Item four</li>
+            <div>Item five</div>
+        </ul>
+        
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
